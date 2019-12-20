@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body class="text-center">
+
+	<form id="app" class="form-app">
+		
+		<div class="form-group">
+
+			<div class="row mb-2 mt-4">
+				<div class="col-md-6">
+					<img  id="icon" src="http://openweathermap.org/img/w/10d.png">
+					<h4><span id="location">Cebu City</span>, <span id="country">PH</span></h4>
+					<p id="description">Overcast clouds</p>
+					<h1><span id="temp">20 </span> &#8451;</h1>
+				</div>
+				<div class="col-md-6">
+					<table class="table table-borderless table-sm mt-4">
+						<tbody>
+							<tr>
+								<td><strong>Wind</strong></td>
+								<td><span id="wind">4.1</span> m/s</td>
+							</tr>
+							<tr>
+								<td><strong>Pressure</strong></td>
+								<td><span id="pressure">1000</span> hpa</td>
+							</tr>
+							<tr>
+								<td><strong>Humidity</strong></td>
+								<td><span id="humidity">88</span> %</td>
+							</tr>
+							<tr>
+								<td><strong>Sunrise</strong></td>
+								<td><span id="sunrise">00:00</span></td>
+							</tr>
+							<tr>
+								<td><strong>Sunset</strong></td>
+								<td><span id="sunset">00:00</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="" style="padding: 0 20px;">
+					<p id="message" class="alert alert-danger" hidden="true"></p>
+				</div>
+			</div>
+			<div class="" style="margin: 0 10%;">
+				<input type="text" class="form-control" id="q" placeholder="Your city name" name="q">
+			</div>
+			<input type="hidden" name="appid" value="69cde207a347247551ae5366228609ff">
+			<input type="hidden" name="units" value="metric">
+		</div>
+		<button type="button" class="btn btn-primary">Use location</button>
+	</form>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<script src="/assets/js/app.js"></script>
+
+</body>
+</html>
